@@ -2,6 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.3'
+gem 'mysql2', '~> 0.3.19'
 gem 'sass-rails', '~> 5.0.3' # Use SCSS for stylesheets
 gem 'uglifier', '>= 2.7.1' # Use Uglifier as compressor for JavaScript assets
 gem 'coffee-rails', '~> 4.1.0' # Use CoffeeScript for .coffee assets and views
@@ -14,12 +15,14 @@ gem 'jbuilder', '~> 2.3.1' # Build JSON APIs with ease. Read more: https://githu
 gem 'virtus', '~> 1.0.5'
 gem 'sdoc', '~> 0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
 
+gem 'factory_girl_rails', '~> 4.5.0', group: [:test, :development]
+
 group :development do
   gem 'better_errors', '~> 2.1.1'
   gem 'binding_of_caller', '~> 0.7.2'
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1.3'
-  gem 'pry-rails', '~> 0.3.4', group: :development
+  gem 'pry-rails', '~> 0.3.4'
 end
 
 group :test do
