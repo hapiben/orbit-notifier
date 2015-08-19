@@ -13,6 +13,7 @@ gem 'jquery-rails', '~> 4.0.4' # Use jquery as the JavaScript library
 gem 'turbolinks', '~> 2.5.3' # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'jbuilder', '~> 2.3.1' # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'virtus', '~> 1.0.5'
+gem 'rails_12factor', '~> 0.0.3'
 gem 'sdoc', '~> 0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
 
 group :test, :development do
