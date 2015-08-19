@@ -35,3 +35,5 @@ group :test do
   gem 'vcr', '~> 2.9.3'
   gem 'webmock', '~> 1.21.0'
 end
+
+gem 'pg', '~> 0.18.2', group: :production
