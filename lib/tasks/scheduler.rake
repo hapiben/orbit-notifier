@@ -1,4 +1,10 @@
 desc 'Fetches and alerts the latest currency from OrbitRemit API'
-task :alert_latest_currency => :environment do
-  
+task :get_latest_exchange_rates => :environment do
+  ExchangeRate.get_latest_rates
+end
+
+desc 'Sends an email alert'
+task :email_latest_exchange_rates => :environment do
+  user = User.last
+  user.email_alert('ph')
 end
