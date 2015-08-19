@@ -20,4 +20,8 @@
 # available at http://guides.rubyonrails.org/i18n.html.
 
 en:
-  hello: "Hello world"
+  app:
+    title: Orbit Notifier
+
+  mailer:
+    alert: Today Exchange Rates

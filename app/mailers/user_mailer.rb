@@ -11,6 +11,6 @@ class UserMailer < ActionMailer::Base
     @exchange_rate = exchange_rate
 
     mail to: user.email,
-         subject: t('mails.user.confirmation')
+         subject: t('mailer.alert')
   end
 end
