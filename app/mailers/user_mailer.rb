@@ -11,6 +11,6 @@ class UserMailer < ActionMailer::Base
     @exchange_rate = exchange_rate
 
     mail to: user.email,
-         subject: t('mailer.alert')
+         subject: "#{t('mailer.alert')} - PHP/NZD #{exchange_rate.exchange_rate}"
   end
 end
