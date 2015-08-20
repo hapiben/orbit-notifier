@@ -5,6 +5,7 @@ end
 
 desc 'Sends an email alert'
 task :email_latest_exchange_rates => :environment do
-  user = User.last
-  user.email_alert('ph')
+  User.all.each do |user|
+    user.email_alert('ph')
+  end
 end
