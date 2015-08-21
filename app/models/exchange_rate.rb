@@ -3,6 +3,10 @@
 class ExchangeRate < ActiveRecord::Base
   GLOBAL_ORBITREMIT_NZPH_URL = 'https://secure.orbitremit.com/api/rates.json?static=true&country=nz'
 
+  def self.prev(id, currency_code)
+    where('id < ? AND currency_code = ?', id, currency_code).first
+  end
+
   def self.get_latest_rate_by_country_code(country_code)
     self.where(country_code: country_code).last
   end
