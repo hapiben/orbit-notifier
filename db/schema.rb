@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150822100719) do
+ActiveRecord::Schema.define(version: 20150822101337) do
 
   create_table "countries", force: :cascade do |t|
     t.string   "country_code",  limit: 255
@@ -26,6 +26,15 @@ ActiveRecord::Schema.define(version: 20150822100719) do
     t.string   "currency_name", limit: 255
     t.string   "currency_code", limit: 255
     t.string   "exchange_rate", limit: 255
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
+  end
+
+  create_table "origins", force: :cascade do |t|
+    t.string   "name",          limit: 255
+    t.string   "country_code",  limit: 255
+    t.string   "currency_name", limit: 255
+    t.string   "currency_code", limit: 255
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
   end
