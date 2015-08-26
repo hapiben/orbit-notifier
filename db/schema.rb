@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150824064154) do
+ActiveRecord::Schema.define(version: 20150824065706) do
 
   create_table "countries", force: :cascade do |t|
     t.string   "country_code",  limit: 255
@@ -19,6 +19,13 @@ ActiveRecord::Schema.define(version: 20150824064154) do
     t.string   "currency_code", limit: 255
     t.datetime "created_at",                null: false
     t.datetime "updated_at",                null: false
+  end
+
+  create_table "exchanges", force: :cascade do |t|
+    t.integer  "origin_id",  limit: 4
+    t.integer  "country_id", limit: 4
+    t.datetime "created_at",           null: false
+    t.datetime "updated_at",           null: false
   end
 
   create_table "origins", force: :cascade do |t|
@@ -31,11 +38,13 @@ ActiveRecord::Schema.define(version: 20150824064154) do
   end
 
   create_table "rates", force: :cascade do |t|
-    t.integer  "rate",       limit: 4
+    t.integer  "rate_cents", limit: 4
     t.integer  "country_id", limit: 4
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
+
+  add_index "rates", ["country_id"], name: "index_rates_on_country_id", using: :btree
 
   create_table "users", force: :cascade do |t|
     t.string   "first_name", limit: 255

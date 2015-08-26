@@ -15,6 +15,7 @@ gem 'jbuilder', '~> 2.3.1' # Build JSON APIs with ease. Read more: https://githu
 gem 'virtus', '~> 1.0.5'
 gem 'rails_12factor', '~> 0.0.3'
 gem 'sdoc', '~> 0.4.1', group: :doc # bundle exec rake doc:rails generates the API under doc/api.
+gem 'money-rails', '~> 1.4.1'
 
 group :test, :development do
   gem 'dotenv-rails', '~> 2.0.2'

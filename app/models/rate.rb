@@ -1,6 +1,10 @@
 class Rate < ActiveRecord::Base
 
   belongs_to :countries
+
+  monetize :rate_cents, allow_nil: false, numericality: {
+    greater_than_or_equal_to: 0
+  }
 end
 
 
