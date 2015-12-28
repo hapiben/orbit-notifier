@@ -37,6 +37,7 @@ group :test do
   gem 'cucumber-rails', '~> 1.4.2', :require => false
   gem 'database_cleaner', '~> 1.5.1' # database_cleaner is not required, but highly recommended
   gem 'site_prism', '~> 2.8'
+  gem 'selenium-webdriver', '~> 2.48', '>= 2.48.1'
 end
 
 gem 'pg', '~> 0.18.4', group: :production
