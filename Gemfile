@@ -26,16 +26,17 @@ group :development do
   gem 'capistrano', '~> 3.4.0'
   gem 'capistrano-rails', '~> 1.1.5'
   gem 'pry-rails', '~> 0.3.4'
+  gem 'web-console', '~> 3.0.0' # Access an IRB console on exception pages or by using <%= console %> in views
 end
 
 group :test do
-  gem 'web-console', '~> 3.0.0' # Access an IRB console on exception pages or by using <%= console %> in views
   gem 'spring', '~> 1.6.1' # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'rspec-rails', '~> 3.4.0'
   gem 'vcr', '~> 3.0.1'
   gem 'webmock', '~> 1.22.3'
   gem 'cucumber-rails', '~> 1.4.2', :require => false
   gem 'database_cleaner', '~> 1.5.1' # database_cleaner is not required, but highly recommended
+  gem 'site_prism', '~> 2.8'
 end
 
 gem 'pg', '~> 0.18.4', group: :production
