@@ -1,0 +1,37 @@
+@import 'variables';
+
+header {
+  a {
+    color: $tuatara;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}
+
+.main {
+  margin-top: 50px;
+}
+
+.masthead {
+  margin-top: 40px;
+
+  h1, h2 {
+    font-weight: 300;
+  }
+}
+
+footer {
+  margin: 40px 0;
+
+  a, p {
+    font-weight: 400;
+    font-size: 12px;
+    color: $aluminum;
+
+    &:hover {
+      color: $aluminum;
+    }
+  }
+}

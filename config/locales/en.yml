@@ -22,7 +22,8 @@
 en:
   app:
     title: Orbit Notifier
-    description: Get daily exchange rates alerts
+    description: Get daily exchange rate alerts
+    author: Ben Aluan
 
   mailer:
     alert: Today Exchange Rates
