@@ -21,8 +21,8 @@
 
 en:
   app:
-    title: Orbit Notifier
-    description: Get daily exchange rate alerts
+    title: Currency Ping
+    description: Get daily <strong>exchange rate</strong> alerts
     author: Ben Aluan
 
   mailer:
